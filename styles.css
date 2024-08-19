@@ -8,10 +8,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1%;
+  padding: 1% 2.5%;
   font-variant: all-small-caps;
   font-weight: 900;
-  font-size: large;
+  font-size: 1.6em;
 }
 .menu {
   display: flex;
@@ -34,4 +34,22 @@
 body {
   background-color: #ece9e1;
   color: #e43c13;
+}
+
+.hero {
+  padding: 20% 4% 25% 4%;
+}
+
+.hero h1 {
+  padding-bottom: 3%;
+  font-size: 4em;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  /* TODO: Make footer stay at the bottom on all device sizes */
 }
