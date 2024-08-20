@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* NAV BAR */
 .nav-links {
   display: flex;
   flex-direction: row;
@@ -22,18 +23,26 @@
   text-decoration: none;
   color: #e43c13;
 }
-
 .nav-links a:hover {
   color: black;
 }
-
 .nav-links a:visited {
   color: #e43c13;
 }
 
+/* BODY */
 body {
   background-color: #ece9e1;
   color: #e43c13;
+}
+
+/* CONTENT IN BODY */
+
+/* content heading */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .content h1 {
   padding-top: 0.8em;
@@ -41,9 +50,87 @@ body {
 }
 .content p {
   color: #006992;
+  padding-top: 1em;
 }
+/* CONTENT CARDS */
+.info-cards {
+  padding: 0 10em 10em 10em;
+}
+/* my cards */
+.me-info {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  border-radius: 2em;
+}
+.me-info p {
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  background-color: whitesmoke;
+  color: #0a4e69;
+  border-radius: 2em;
+  padding: 2em;
+}
+.flex-me {
+  display: flex;
+  flex: 1 1 auto; /* Allows the image to grow and shrink */
+  width: 25em; /* Prevents the image from exceeding its natural size */
+  height: 18em; /* Maintains the aspect ratio */
+  border-radius: 2em;
+}
+/* nature cards */
+.nature-info {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  border-radius: 2em;
+}
+.nature-info p {
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  background-color: whitesmoke;
+  color: #0a4e69;
+  border-radius: 2em;
+  padding: 2em;
+}
+.flex-nature {
+  display: flex;
+  flex: 1 1 auto; /* Allows the image to grow and shrink */
+  width: 25em; /* Prevents the image from exceeding its natural size */
+  height: 18em; /* Maintains the aspect ratio */
+  border-radius: 2em;
+}
+/* photography cards */
+.photography-info {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  border-radius: 2em;
+}
+.photography-info p {
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  background-color: whitesmoke;
+  color: #0a4e69;
+  border-radius: 2em;
+  padding: 2em;
+}
+.flex-photography {
+  display: flex;
+  flex: 1 1 auto; /* Allows the image to grow and shrink */
+  width: 25em; /* Prevents the image from exceeding its natural size */
+  height: 18em; /* Maintains the aspect ratio */
+  border-radius: 2em;
+}
+/* FOOTER */
 footer {
-  position: sticky;
+  /* position: sticky; */
   bottom: 0;
   display: flex;
   justify-content: center;
