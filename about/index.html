@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about-styles.css" />
+    <title>Nicole Illera - About</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-links">
+        <div>
+          <a href="/">Nicole Illera</a>
+        </div>
+        <!-- TODO: <need to create about - blog- and project html> -->
+        <div class="menu">
+          <a href="/about/">About</a>
+          <a href="">Projects</a>
+          <a href="">Blog</a>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>About Me</h1>
+      <p>
+        “It is when I struggle that I strengthen. It is when challenged to my
+        core that I learn the depth of who I am.” - Steve Maraboli
+      </p>
+    </div>
+    <section>
+      <img />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quidem
+        ab, omnis mollitia assumenda quaerat ipsum magni distinctio. Aliquid
+        maiores.
+      </p>
+    </section>
+    <section>
+      <img />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+        dolore! Suscipit tempore illo voluptas id accusamus officia quisquam
+        rerum impedit facilis.
+      </p>
+    </section>
+    <section>
+      <img />
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda a
+        reiciendis nam! Perspiciatis ducimus aliquid repellat.
+      </p>
+    </section>
+    <footer>
+      <p>&copy; <time id="year"></time> Nicole Illera.</p>
+    </footer>
+    <script>
+      let today = new Date();
+      let year = today.getFullYear();
+      document.getElementById('year').textContent = year;
+    </script>
+  </body>
+</html>

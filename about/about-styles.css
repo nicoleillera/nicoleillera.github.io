@@ -35,22 +35,12 @@ body {
   background-color: #ece9e1;
   color: #e43c13;
 }
-
-.hero {
-  padding: 20% 4% 25% 4%;
-  /* background-image: url(https://cdn.pixabay.com/photo/2017/05/09/13/33/laptop-2298286_1280.png);
-  background-size: cover;
-  background-repeat: no-repeat; */
+.content h1 {
+  padding-top: 0.8em;
+  font-size: 2.8em;
 }
-
-.hero h1 {
-  padding-bottom: 3%;
-  font-size: 4em;
-}
-.hero p {
-  color: black;
-  font-size: 1.2em;
-  font-weight: 500;
+.content p {
+  color: #006992;
 }
 footer {
   position: sticky;
