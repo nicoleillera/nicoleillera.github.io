@@ -26,9 +26,6 @@
 .nav-links a:hover {
   color: black;
 }
-.nav-links a:visited {
-  color: #e43c13;
-}
 
 /* BODY */
 body {
