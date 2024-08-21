@@ -30,6 +30,8 @@ body {
 
 .nav-links a:hover {
   color: black;
+  text-decoration: underline;
+  text-decoration-color: #62bad0;
 }
 
 /* OVERALL CONTENT */

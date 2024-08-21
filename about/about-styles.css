@@ -25,6 +25,8 @@
 }
 .nav-links a:hover {
   color: black;
+  text-decoration: underline;
+  text-decoration-color: #e43c13;
 }
 
 /* BODY */
