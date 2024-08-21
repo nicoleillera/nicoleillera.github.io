@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bookshelf-styles.css" />
+    <title>Nicole Illera - Bookshelf</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-links">
+        <div>
+          <a href="/">Nicole Illera</a>
+        </div>
+        <div class="menu">
+          <a href="/about/">About</a>
+          <a href="/projects/">Projects</a>
+          <a href="/bookshelf/">Bookshelf</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="bookshelf-heading">
+        <h1>Browse My Shelf</h1>
+        <!-- <img src="" /> -->
+      </div>
+      <section class="books-container">
+        <div class="book-card">
+          <a
+            target="_blank"
+            href="https://www.goodreads.com/book/show/54493401-project-hail-mary?from_search=true&from_srp=true&qid=28tbAgsvJZ&rank=1"
+            ><img
+              src="https://m.media-amazon.com/images/I/81zD9kaVW9L._AC_UF1000,1000_QL80_.jpg"
+              class="book-image"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a
+            target="_blank"
+            href="https://www.goodreads.com/book/show/198220896-talk-to-strangers?from_search=true&from_srp=true&qid=Pvu4vqUUjT&rank=4"
+            ><img
+              src="https://m.media-amazon.com/images/I/61XwHcZdVsL._AC_UF1000,1000_QL80_.jpg"
+              class="book-image"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a
+            target="_blank"
+            href="https://www.goodreads.com/book/show/27774758-an-ember-in-the-ashes?ref=nav_sb_ss_1_15"
+            ><img
+              src="https://m.media-amazon.com/images/I/8180W7UObeL._AC_UF1000,1000_QL80_.jpg"
+              class="book-image"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a
+            target="_blank"
+            href="https://www.goodreads.com/book/show/43587154-jade-city?from_search=true&from_srp=true&qid=M8fOTdSRil&rank=1"
+            ><img
+              src="https://m.media-amazon.com/images/I/913imOgCUSL._AC_UF1000,1000_QL80_.jpg"
+              class="book-image"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a
+            target="_blank"
+            href="https://www.goodreads.com/book/show/41716919-jade-war?from_search=true&from_srp=true&qid=au1vpss7Yt&rank=1"
+            ><img
+              src="https://m.media-amazon.com/images/I/81Ixm60+1VL._AC_UF1000,1000_QL80_.jpg"
+              class="book-image"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a
+            target="_blank"
+            href="https://www.goodreads.com/book/show/51057191-jade-legacy"
+            ><img
+              src="https://m.media-amazon.com/images/I/91lCj0-80tL._AC_UF1000,1000_QL80_.jpg"
+              class="book-image"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a
+            target="_blank"
+            href="https://www.goodreads.com/book/show/216875733-the-stationary-shop?ref=nav_sb_ss_1_15"
+            ><img
+              src="https://m.media-amazon.com/images/I/81TjdlnL6iL._AC_UF1000,1000_QL80_.jpg"
+              class="book-image"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a
+            target="_blank"
+            href="https://www.goodreads.com/book/show/35965482-middlegame?ref=nav_sb_ss_1_10"
+            ><img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1537297437i/35965482.jpg"
+              class="book-image"
+          /></a>
+        </div>
+        <div class="book-card">
+          <a
+            target="_blank"
+            href="https://www.goodreads.com/book/show/33590210-an-american-marriage?ref=nav_sb_ss_1_9"
+            ><img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1491493625i/33590210.jpg"
+              class="book-image"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="socials">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/nicole-duchitanga-illera-b3a56a2a7/"
+        >
+          <img src="/assets/icons8-linkedin-retry.png" />
+        </a>
+        <a target="_blank" href="https://github.com/nicoleillera">
+          <img src="/assets/icons8-github-retry.png" />
+        </a>
+        <a target="_blank" href="https://x.com/NicoleDuch27654"
+          ><img src="/assets/icons8-mail-40.png" id="x-nav"
+        /></a>
+      </div>
+      <p>&copy; <time id="year"></time> Nicole Duchitanga-Illera.</p>
+    </footer>
+  </body>
+  <script>
+    let today = new Date();
+    let year = today.getFullYear();
+    document.getElementById('year').textContent = year;
+  </script>
+</html>

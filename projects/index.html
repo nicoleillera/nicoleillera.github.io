@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-    /> -->
+    />
     <link rel="stylesheet" href="projects-styles.css" />
     <title>Nicole Illera - Projects</title>
   </head>
@@ -18,11 +18,10 @@
         <div>
           <a href="/">Nicole Illera</a>
         </div>
-        <!-- TODO: <need to create about - blog- and project html> -->
         <div class="menu">
           <a href="/about/">About</a>
-          <a href="">Projects</a>
-          <a href="">Blog</a>
+          <a href="/projects/">Projects</a>
+          <a href="/bookshelf/">Bookshelf</a>
         </div>
       </nav>
     </header>
@@ -40,5 +39,27 @@
         </div>
       </main>
     </section>
+    <footer>
+      <div class="socials">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/nicole-duchitanga-illera-b3a56a2a7/"
+        >
+          <img src="/assets/icons8-linkedin-retry.png" />
+        </a>
+        <a target="_blank" href="https://github.com/nicoleillera">
+          <img src="/assets/icons8-github-retry.png" />
+        </a>
+        <a target="_blank" href="https://x.com/NicoleDuch27654"
+          ><img src="/assets/icons8-mail-40.png" id="x-nav"
+        /></a>
+      </div>
+      <p>&copy; <time id="year"></time> Nicole Duchitanga-Illera.</p>
+    </footer>
   </body>
+  <script>
+    let today = new Date();
+    let year = today.getFullYear();
+    document.getElementById('year').textContent = year;
+  </script>
 </html>

@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 body {
+  font-family: 'Barlow Condensed', sans-serif;
   background-color: #eef8ff;
   color: #303160;
 }
@@ -15,7 +16,7 @@ body {
   padding: 1% 2.5%;
   font-variant: all-small-caps;
   font-weight: 900;
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 .menu {
   display: flex;
@@ -53,6 +54,16 @@ body {
   border-radius: 2em;
   color: rgb(244, 242, 238);
   padding: 1.2em 20em 10em 20em;
+  opacity: 0;
+  animation: fadeIn 1.3s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .text-adventure h2 {
   padding-bottom: 1.3em;
@@ -78,4 +89,23 @@ body {
   width: 13em; /* Prevents the image from exceeding its natural size */
   height: 13em; /* Maintains the aspect ratio */
   border-radius: 1em;
+}
+
+/* FOOTER */
+footer {
+  /* position: sticky; */
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+  /* TODO: Make footer stay at the bottom on all device sizes */
+}
+.socials a {
+  text-decoration: none;
+}
+.socials img {
+  width: 65px;
+  height: 65px;
 }

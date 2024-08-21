@@ -11,7 +11,7 @@
   padding: 1% 2.5%;
   font-variant: all-small-caps;
   font-weight: 900;
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 .menu {
   display: flex;
@@ -51,11 +51,11 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 5em;
-  padding: 15% 4% 25% 4%;
+  padding: 12em 3em;
 }
 .hero h1 {
   padding-bottom: 3%;
-  font-size: 4.2em;
+  font-size: 4.6em;
   opacity: 0; /* Start invisible */
   transform: translateY(-100px); /* Start above the element's final position */
   animation: fall 1s ease-out forwards;
@@ -76,7 +76,7 @@ body {
 }
 .hero p {
   color: black;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: 550;
 }
 
