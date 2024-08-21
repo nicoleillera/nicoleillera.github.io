@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #eef8ff;
+  color: #303160;
+}
 /* NAV BAR */
 .nav-links {
   display: flex;
@@ -25,4 +29,53 @@
 
 .nav-links a:hover {
   color: black;
+}
+
+/* OVERALL CONTENT */
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em;
+}
+/* HEADING */
+.projects-content h1 {
+  padding: 1em;
+  font-size: 2em;
+}
+/* TEXT ADVENTURE CARD */
+.text-adventure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #004e89;
+  border-radius: 2em;
+  color: rgb(244, 242, 238);
+  padding: 1.2em 20em 10em 20em;
+}
+.text-adventure h2 {
+  padding-bottom: 1.3em;
+  /* text-decoration: underline; */
+}
+#adventure-prompt {
+  display: flex;
+  flex: 1 1 auto; /* Allows the image to grow and shrink */
+  width: 12em; /* Prevents the image from exceeding its natural size */
+  height: 12em; /* Maintains the aspect ratio */
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+.adventure-outcomes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1.5em;
+}
+.adventure-outcomes img {
+  display: flex;
+  flex: 1 1 auto; /* Allows the image to grow and shrink */
+  width: 13em; /* Prevents the image from exceeding its natural size */
+  height: 13em; /* Maintains the aspect ratio */
+  border-radius: 1em;
 }
