@@ -35,17 +35,43 @@ body {
 }
 
 /* OVERALL CONTENT */
+
 .projects-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.2em;
+  gap: 1.5em;
+  padding: 2em 4em;
+}
+@media (min-width: 1200px) {
+  .projects-content {
+    padding: 2em 16em;
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .projects-content {
+    padding: 2em 10em;
+  }
+}
+@media (min-width: 400px) and (max-width: 800px) {
+  .projects-content {
+    padding: 2em 2em;
+  }
+}
+@media (max-width: 400px) {
+  .projects-content {
+    padding: 2em 0em;
+  }
 }
 /* HEADING */
 .projects-content h1 {
-  padding: 1em;
-  font-size: 2em;
+  background-color: #f1ffe7;
+  border-radius: 0.3em;
+  box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 0.1);
+  padding: 0.3em 2.2em;
+  /* padding: 0.8em; */
+  font-size: 2.3rem;
 }
 /* TEXT ADVENTURE CARD */
 .text-adventure {
@@ -53,9 +79,9 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #004e89;
-  border-radius: 2em;
+  border-radius: 1.8em;
   color: rgb(244, 242, 238);
-  padding: 1.2em 20em 10em 20em;
+  padding: 1.2em 0 2em 0;
   opacity: 0;
   animation: fadeIn 1.3s ease-in-out forwards;
 }
@@ -68,18 +94,38 @@ body {
   }
 }
 .text-adventure h2 {
-  padding-bottom: 1.3em;
-  /* text-decoration: underline; */
+  padding-top: 0.5em;
+  font-size: 2em;
+}
+#credits {
+  padding-bottom: 1em;
+}
+.text-adventure p {
+  font-size: 1.2em;
+}
+.prompt-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5em;
+  padding: 0 2em 0 5em;
 }
 #adventure-prompt {
   display: flex;
   flex: 1 1 auto; /* Allows the image to grow and shrink */
-  width: 12em; /* Prevents the image from exceeding its natural size */
-  height: 12em; /* Maintains the aspect ratio */
+  width: 15em; /* Prevents the image from exceeding its natural size */
+  height: 14em; /* Maintains the aspect ratio */
   border-radius: 1em;
   margin-bottom: 1em;
 }
-.adventure-outcomes {
+#begin-adventure-button {
+  padding: 1em;
+  border-radius: 0.5em;
+  margin-top: 2em;
+  background-color: rgb(246, 246, 101);
+  border: none;
+}
+/* .adventure-outcomes {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -87,11 +133,11 @@ body {
 }
 .adventure-outcomes img {
   display: flex;
-  flex: 1 1 auto; /* Allows the image to grow and shrink */
-  width: 13em; /* Prevents the image from exceeding its natural size */
-  height: 13em; /* Maintains the aspect ratio */
+  flex: 1 1 auto;
+  width: 13em;
+  height: 13em; 
   border-radius: 1em;
-}
+} */
 
 /* FOOTER */
 footer {
@@ -110,4 +156,7 @@ footer {
 .socials img {
   width: 65px;
   height: 65px;
+}
+.socials img:hover {
+  transform: translateY(-10px);
 }

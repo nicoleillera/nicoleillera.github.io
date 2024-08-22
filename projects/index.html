@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="projects-styles.css" />
     <title>Nicole Illera - Projects</title>
+    <script src="index.js"></script>
   </head>
   <body>
     <header>
@@ -26,16 +27,38 @@
       </nav>
     </header>
     <section class="projects-content">
-      <h1>Adventures in Code : A Collection of My Creations</h1>
+      <div id="project-heading">
+        <h1>From Code To Creation</h1>
+      </div>
       <main>
         <div class="text-adventure">
           <h2>Text Adventure Game</h2>
-          <img src="/assets/text-adventure-prompt.png" id="adventure-prompt" />
-          <div class="adventure-outcomes">
-            <img src="/assets/text-adventure-win.png" />
-            <img src="/assets/text-adventure-lose.png" />
-            <img src="/assets/text-adventure-poison.png" />
+          <p id="credits">
+            <small>(Created by yours truly and Youn Lei Eain)</small>
+          </p>
+          <div class="prompt-description">
+            <img
+              src="/assets/fixed-prompt.png"
+              alt="Screenshot of the Dinner Dash prompt. Prompt tells you that you have two hours to complete your daughters favorite dinner for her birthday. "
+              id="adventure-prompt"
+            />
+            <p>
+              <strong>Birthday Dinner Dash</strong> is an interactive
+              text-adventure game that challenges players to think on their feet
+              as they prepare a birthday dinner under time pressure. Developed
+              using built-in browser functions like alert, confirm, and prompt,
+              the game engages users with dynamic questions and immediate
+              feedback, creating an immersive experience. The game’s logic,
+              driven by if statements in JavaScript, tracks time lost based on
+              the choices players make, leading to one of three possible
+              outcomes. Whether you win by managing time wisely or lose by
+              taking too long or choosing the wrong ingredients, this game
+              offers a fun yet frantic challenge.
+            </p>
           </div>
+          <button onclick="beginGame()" id="begin-adventure-button">
+            Click here to play game
+          </button>
         </div>
       </main>
     </section>
@@ -45,13 +68,13 @@
           target="_blank"
           href="https://www.linkedin.com/in/nicole-duchitanga-illera-b3a56a2a7/"
         >
-          <img src="/assets/icons8-linkedin-retry.png" />
+          <img src="/assets/icons8-linkedin-retry.png" alt="Linkedin icon" />
         </a>
         <a target="_blank" href="https://github.com/nicoleillera">
-          <img src="/assets/icons8-github-retry.png" />
+          <img src="/assets/icons8-github-retry.png" alt="Github icon" />
         </a>
-        <a target="_blank" href="https://x.com/NicoleDuch27654"
-          ><img src="/assets/icons8-mail-40.png" id="x-nav"
+        <a target="_blank" href="mailto:nic.illera@gmail.com"
+          ><img src="/assets/icons8-mail-40.png" alt="Email icon" id="x-nav"
         /></a>
       </div>
       <p>&copy; <time id="year"></time> Nicole Duchitanga-Illera.</p>
