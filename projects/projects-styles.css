@@ -81,7 +81,7 @@ body {
   background-color: #004e89;
   border-radius: 1.8em;
   color: rgb(244, 242, 238);
-  padding: 1.2em 0 2em 0;
+  padding: 1.2em 0 4em 0;
   opacity: 0;
   animation: fadeIn 1.3s ease-in-out forwards;
 }
@@ -124,7 +124,33 @@ body {
   margin-top: 2em;
   background-color: rgb(246, 246, 101);
   border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+/* Keyframes for the shake animation */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply the shake animation on hover */
+#begin-adventure-button:hover {
+  animation: shake 0.6s ease;
+}
+
 /* .adventure-outcomes {
   display: flex;
   flex-direction: row;

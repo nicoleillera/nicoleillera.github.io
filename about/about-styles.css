@@ -59,7 +59,7 @@ body {
 }
 /* CONTENT CARDS */
 .info-cards {
-  padding: 0 10em 7em 10em;
+  padding: 0 10em 5em 6em;
   opacity: 0;
   animation: fadeIn 1.3s ease-in-out forwards;
 }
@@ -138,10 +138,22 @@ body {
 }
 .flex-nature {
   display: flex;
-  flex: 1 1 auto; /* Allows the image to grow and shrink */
+  flex: 1 1 auto;
   width: 25em;
   height: 18em;
   border-radius: 2em;
+}
+#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 4em;
+}
+.gallery-image {
+  width: 17em;
+  height: 25em;
+  border-radius: 0.8em;
+  margin-right: 2.5em;
 }
 
 /* FOOTER */
