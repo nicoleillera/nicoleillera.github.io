@@ -96,14 +96,38 @@ body {
   border-radius: 2em;
 }
 /* nature cards */
-.nature-info {
+.learning-about {
   margin-top: 4em;
   display: flex;
   flex-direction: row;
   gap: 3em;
   border-radius: 2em;
 }
-.nature-info p {
+.learning-about p {
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  background-color: white;
+  color: #0a4e69;
+  border-radius: 2em;
+  padding: 2em;
+}
+.flex-learning {
+  display: flex;
+  flex: 1 1 auto; /* Allows the image to grow and shrink */
+  width: 25em;
+  height: 18em;
+  border-radius: 2em;
+}
+/* photography cards */
+.nature-about {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  border-radius: 2em;
+}
+.nature-about p {
   display: flex;
   align-items: center;
   font-size: 1.4em;
@@ -113,30 +137,6 @@ body {
   padding: 2em;
 }
 .flex-nature {
-  display: flex;
-  flex: 1 1 auto; /* Allows the image to grow and shrink */
-  width: 25em;
-  height: 18em;
-  border-radius: 2em;
-}
-/* photography cards */
-.photography-info {
-  margin-top: 4em;
-  display: flex;
-  flex-direction: row;
-  gap: 3em;
-  border-radius: 2em;
-}
-.photography-info p {
-  display: flex;
-  align-items: center;
-  font-size: 1.4em;
-  background-color: white;
-  color: #0a4e69;
-  border-radius: 2em;
-  padding: 2em;
-}
-.flex-photography {
   display: flex;
   flex: 1 1 auto; /* Allows the image to grow and shrink */
   width: 25em;
