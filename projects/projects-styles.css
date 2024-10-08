@@ -118,7 +118,7 @@ body {
   border-radius: 1em;
   margin-bottom: 1em;
 }
-#begin-adventure-button {
+#adventure-button {
   padding: 1em;
   border-radius: 0.5em;
   margin-top: 2em;
@@ -147,7 +147,7 @@ body {
 }
 
 /* Apply the shake animation on hover */
-#begin-adventure-button:hover {
+#adventure-button:hover {
   animation: shake 0.6s ease;
 }
 
@@ -174,6 +174,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding-bottom: 1em;
+  color: #e43c13;
   /* TODO: Make footer stay at the bottom on all device sizes */
 }
 .socials a {
