@@ -73,15 +73,17 @@ body {
   /* padding: 0.8em; */
   font-size: 2.3rem;
 }
-/* TEXT ADVENTURE CARD */
+
+/************ TEXT ADVENTURE GAME **************/
 .text-adventure {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #004e89;
   border-radius: 1.8em;
+  margin-bottom: 3em;
   color: rgb(244, 242, 238);
-  padding: 1.2em 0 4em 0;
+  padding: 1.2em 0 2.5em 0;
   opacity: 0;
   animation: fadeIn 1.3s ease-in-out forwards;
 }
@@ -94,30 +96,30 @@ body {
   }
 }
 .text-adventure h2 {
-  padding-top: 0.5em;
+  padding: 0.5em;
   font-size: 2em;
 }
-#credits {
-  padding-bottom: 1em;
-}
+
 .text-adventure p {
   font-size: 1.2em;
 }
-.prompt-description {
+/* why do i not need this????
+/* .prompt-description {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5em;
   padding: 0 2em 0 5em;
-}
+} */
 #adventure-prompt {
   display: flex;
   flex: 1 1 auto; /* Allows the image to grow and shrink */
-  width: 15em; /* Prevents the image from exceeding its natural size */
-  height: 14em; /* Maintains the aspect ratio */
+  width: 15em;
+  height: 14em;
   border-radius: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
 }
+
 #adventure-button {
   padding: 1em;
   border-radius: 0.5em;
@@ -164,6 +166,85 @@ body {
   height: 13em; 
   border-radius: 1em;
 } */
+
+/************* DOM SNAKE GAME *****************/
+
+.snakegame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7efde;
+  border-radius: 1.8em;
+  margin-bottom: 3em;
+  color: #2b2b26;
+  padding: 1.2em 0 2.5em 0;
+  opacity: 0;
+  animation: fadeIn 1.3s ease-in-out forwards;
+}
+
+.snakegame h2 {
+  padding: 0.5em;
+  font-size: 2.5em;
+}
+
+#snakegame-pic {
+  display: flex;
+  flex: 1 1 auto; /* Allows the image to grow and shrink */
+  width: 16em; /* Prevents the image from exceeding its natural size */
+  height: 14em; /* Maintains the aspect ratio */
+  border-radius: 1em;
+  margin-top: 1em;
+}
+.snakegame p {
+  font-size: 1.2em;
+}
+.prompt-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5em;
+  padding: 0 2em 0 5em;
+}
+
+#snakegame-button {
+  padding: 1em;
+  border-radius: 0.5em;
+  margin-top: 2em;
+  background-color: #e43c13;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#snakegame-button:hover {
+  animation: shake 0.6s ease;
+}
+/************ TIC TAC TOE IN REACT ****************/
+
+.ttt-react {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #004e89;
+  border-radius: 1.8em;
+  color: rgb(244, 242, 238);
+  padding: 1.2em 0 2.5em 0;
+  opacity: 0;
+  animation: fadeIn 1.3s ease-in-out forwards;
+}
+.ttt-react h2 {
+  padding-top: 0.5em;
+  font-size: 2em;
+}
+
+#under-construction {
+  display: flex;
+  flex: 1 1 auto; /* Allows the image to grow and shrink */
+  width: 32em; /* Prevents the image from exceeding its natural size */
+  height: 18em; /* Maintains the aspect ratio */
+  border-radius: 1em;
+  margin-top: 2em;
+}
 
 /* FOOTER */
 footer {
